@@ -1,0 +1,198 @@
+@font-face {
+    font-family: HelveticaNeue;
+    font-weight: heavy;
+    src: url("fonts/helvetica/heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/helvetica/Helvetica-Bold.woff') format('woff');
+}
+
+.pfp {
+    border-radius: 50%;
+    height: 150px;
+    width: auto;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.pfp:hover {
+    box-shadow:
+        0 0 0 2px #2b00ff, 
+        0 0 5px 3px #1C00A7; 
+}
+
+h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 1000;
+    font-style: italic;
+    color: white;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 950;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+}
+
+h3 {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 950;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+
+
+p {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+   font-size: 30px;   
+}
+
+pALTERNATE {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(244, 255, 197);
+   font-size: 30px;
+}
+
+newmoon {
+    font-family: "Oswald", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(54, 0, 140);
+   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-width: 1px;
+}
+
+benxcool {
+    font-family: "Oswald", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 50px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-width: 1px;
+    color: rgb(0, 87, 145)
+}
+
+body {
+    background-image: url("https://newbensstudios.github.io/img/backgroundbxcstudios.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+a {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(244, 255, 197);
+    font-size: 40px;
+    
+  }
+
+.btn {
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, #2b00ff 0%, #1C00A7 100%);
+    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+.btn:hover {
+          background: rgb(34, 34, 34); 
+          box-shadow:
+            0 0 0 2px #2b00ff, 
+            0 0 5px 3px #1C00A7; 
+}
+
+bsHoverMain {
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: aqua;
+    font-size: 60px;   
+}
+
+bsHoverDesc {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: aqua;
+    font-size: 30px; 
+}
+
+bsHoverGenre {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(76, 255, 70);
+    font-size: 50px;
+}
+
+.image {
+    position: relative;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.image__img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay  > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
