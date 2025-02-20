@@ -1,55 +1,60 @@
+:root {
+    --background-black: #0d0b02;
+    --cool-blue: #00c0a0;
+}
+
 body {
-    background-image: url("https://newbensstudios.github.io/img/backgroundbxcstudios.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: var(--background-black);
+    text-align: center;
 }
 
-a {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
+h1{
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 120px;
+}
+
+h2{
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 100px;
+}
+
+h3 {
+    font-family: "IBM Plex Sans", serif;
     font-weight: 300;
-    font-style: normal;
-    color: rgb(244, 255, 197);
-    font-size: 40px;
-    
-  }
-
-h1 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 1000;
-    font-style: italic;
-    color: white;
-    font-size: 70px;
+    color: #ffffff;
+    font-size: 80px;
 }
 
-
-.btn {
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(to right, #2b00ff 0%, #1C00A7 100%);
-  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+.little-thingy {
+    background-color: var(--cool-blue);
+    color: var(--background-black);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    padding: 1px 6px;
+    font-size: calc(.5vw + .9rem);
+    font-weight: 500;
+    line-height: 1.2em;
 }
 
-.btn:hover {
-        background: rgb(34, 34, 34); 
-        box-shadow:
-          0 0 0 2px #2b00ff, 
-          0 0 5px 3px #1C00A7; 
+p{
+    color: #ffffff;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-color: rgba(255, 255, 255, 0);
 }
 
-pALTERNATE {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: rgb(244, 255, 197);
-   font-size: 30px;
+a{
+    color: #ffffff;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 .pfp {
@@ -63,51 +68,6 @@ pALTERNATE {
     box-shadow:
         0 0 0 2px #2b00ff, 
         0 0 5px 3px #1C00A7; 
-}
-
-p {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  color: rgb(244, 255, 197);
-  font-size: 40px;
-}
-
-h2 {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 950;
-    font-style: normal;
-    font-size: 50px;
-    color: white;
-}
-
-h3 {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 950;
-    font-style: normal;
-    font-size: 40px;
-    color: white;
-}
-
-newmoon {
-    font-family: "Oswald", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    font-size: 50px;
-    color: rgb(54, 0, 140);
-   -webkit-text-stroke-color: white;
-   -webkit-text-stroke-width: 1px;
-}
-
-benxcool {
-    font-family: "Oswald", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    font-size: 50px;
-   -webkit-text-stroke-color: white;
-   -webkit-text-stroke-width: 1px;
-    color: rgb(0, 87, 145)
 }
 
 bsHoverMain {
